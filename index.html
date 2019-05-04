@@ -13,14 +13,12 @@
 </head>
 
 <body>
-  <script>
-   document.write("Aisha Anum")";
-    var img = new Image();
-    img.src = 'http://images2.imagebam.com/c8/f2/4f/ef37c51062522184.jpg';
-    img.onclick = function() {
-    window.location.href = 'http://images2.imagebam.com/c8/f2/4f/ef37c51062522184.jpg';
-    };
-    document.body.appendChild(img);
-  </script>
+  <script type="text/javascript">
+  function image(img) {
+    var src = img.src;
+    window.open(src);
+    }
+    </script>
+    <img src="car.jpg" id="thisImg" height="150" size="150" alt="bmw" onclick="image(this)">
 </body>
 </html>
